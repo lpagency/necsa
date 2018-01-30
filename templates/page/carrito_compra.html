@@ -13,20 +13,18 @@
 <script type="text/javascript">
     $(document).ready(function()
     {
-
-        // base_url = 'http://localhost:8520/';
-        // checkout_url = 'http://localhost:8522/';
         var api_url = $.environmentVar(
-            'http://localhost:8520/',
+            'https://apibodegas.ondev.today/',
             'https://apibodegas.ondev.today/',
             'https://apibodegas.loadingplay.com/');
 
         var checkout_url = $.environmentVar(
-            'http://localhost:8522/',
+            'https://lpcheckout.ondev.today/',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com');
 
-        var app_public = $.environmentVar(3,3,13);
+        var app_public = $.environmentVar(13,13,13);
+        var site_name = $.environmentVar('necsa', 'necsa', 'necsa');
 
         var e = $(document).ecommerce(
         {
@@ -35,11 +33,13 @@
             'ignore_stock': true,
             'base_url' : api_url,
             'checkout_url': checkout_url,
+            'site_name': site_name,
             'user' : '{% try %}{{ user["email"] }}{% except %}{% end %}'
         });
 
     });
 </script>
+
 {% end %}
 
 {% block body %}

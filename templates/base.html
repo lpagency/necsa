@@ -153,8 +153,8 @@
                 <td class="descuento hidden-xs">{{! price|money }}</td>
                 <td class="quantity-compra ">
                     <div class="pull-left visible-md visible-lg hidden-xs">{{! quantity}}</div>
-                    <button class="add-one pull-right position_add" product-id="{{! id }}">+</button>
-                    <button class="remove-one pull-right position_remove" product-id="{{! id }}">-</button>
+                    <button class="add-one pull-right position_add" product-id="{{! id }}" lp-cart-add-one="{{! id }}">+</button>
+                    <button class="remove-one pull-right position_remove" product-id="{{! id }}" lp-cart-remove-one="{{! id }}">-</button>
                 </td>
                 <td class="total_money">{{! total|money }}</td>
                 <td class="hidden-xs trash_btn"><a href="#" class="remove-from-cart" product-id="{{! id }}"><i class="fa fa-trash-o"></i></a></td>

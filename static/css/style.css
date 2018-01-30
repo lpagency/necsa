@@ -32,6 +32,11 @@ a:link{
     height: 36px;
 }
 
+.btn-block{
+    border: solid 1px #ccc;
+    color: #777;
+}
+
 .btn-primary.header:hover{
     background-color: #FD0000;
     color: white;

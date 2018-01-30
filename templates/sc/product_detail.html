@@ -112,7 +112,7 @@
                 if (client === 'hidden'){
                     //si cliente esta oculto usar main_price
                     btns+='<div class="col-sm-6 col-xs-12">';
-                        btns+='<button product-id="'+data.id+'" product-name="'+data.name+'" product-price="'+data.main_price+'" product-upp="'+data.upp+'" class="add-to-cart btn btn-lg  btn-block btn_comprar">AGREGAR';
+                        btns+='<button product-id="'+data.id+'" product-name="'+data.name+'" product-price="'+data.main_price+'" product-upp="'+data.upp+'" class="add-to-cart btn-success btn btn-lg btn-block btn_comprar" id="open-cart" product-sku= "'+data.sku+'" product-img="'+data.images[0]['thumb_200']+'" lp-cart-add>AGREGAR';
                         btns+='</button>';
                     btns+='</div>';
                 }else{

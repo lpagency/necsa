@@ -223,7 +223,6 @@
                 beforeShow: function()
                 {
                     $('.fancybox-type-ajax').addClass("fancybox-opened").css("opacity", "1");
-                    console.log($(this.element).data("height"));
                 },
                 afterClose: function()
                 {
@@ -270,8 +269,6 @@
                 'onCleanup': function()
                 {
                     var myContent = this.href;
-                    console.log("llega a clean up");
-                    console.log(myContent);
                     $(myContent).unwrap();
                 }
             });

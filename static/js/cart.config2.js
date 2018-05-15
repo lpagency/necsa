@@ -68,7 +68,6 @@ $(document).ready(function()
         'https://pay.loadingplay.com');
     var app_public = $.environmentVar(13, 13, 13);
 
-    console.log(tag);
     var config =
     {
         'app_public': app_public,

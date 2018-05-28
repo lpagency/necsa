@@ -2303,6 +2303,16 @@ div.image-upload
     }
 }
 
+@media screen and (min-width: 1440px)
+{
+    .dropdown-menu
+    {
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media screen and (max-width: 680px)
 {
     .font-menu

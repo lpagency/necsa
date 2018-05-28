@@ -1541,6 +1541,11 @@ div.image-upload
         width: 96%;
         font-size: 18px;
     }
+
+    .mobil-head-1
+    {
+        min-height: 40px;
+    }
 }
 
 @media screen and (max-width: 1011px)
@@ -2122,7 +2127,7 @@ div.image-upload
         position: relative;
         margin-top: 72px;
         z-index: 1;
-        height: 186px;
+        height: 145px;
     }
 
     .bottom_movil
@@ -2147,7 +2152,6 @@ div.image-upload
     .dropdown
     {
         position: relative;
-        top: 20px;
     }
 
     .btn-primary.header
@@ -2178,7 +2182,7 @@ div.image-upload
 
     .yu
     {
-        margin-top: 29px;
+        min-height: 36px;
     }
 
     .dropdown-menu

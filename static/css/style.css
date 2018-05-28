@@ -2311,6 +2311,34 @@ div.image-upload
         right: 50%;
         transform: translateX(-50%);
     }
+
+    .dropdown-menu.dos
+    {
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown-menu.tres
+    {
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown-menu.cinco
+    {
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown-menu.pastillas
+    {
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 680px)

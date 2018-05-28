@@ -87,8 +87,11 @@ $(document).ready(function()
 
     $(document).on("click", ".subcateg2", function(ev)
     {
-        ev.stopPropagation();
         ev.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
 
         if (tag === $(this).attr('tag'))
         {

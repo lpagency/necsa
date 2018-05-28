@@ -45,22 +45,8 @@
     <body id="home">
         {% block header %}
         {% end %}
-        {% if user is None %}
-            <style type="text/css">
-            .base_menu {
-                display: none !important;
-            }
-            </style>
-            <div class="img-welcome vertical-center desaturada">
-                <div class="col-sm-12 text-center">
-                    <img class="img-welcome2 {{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item">
-                    <h2 class="titulo-password text-center text-uppercase">PARA INGRESAR A ESTE SITIO</h2>
-                    <h2 class="titulo-password text-center text-uppercase"><a href="{{ site_base }}/auth/login" >registrarse o entrar</a></h2>
-                </div>
-            </div>
-        {% else %}
-            {% block body %}
-            {% end %}
+
+        {% block body %}
         {% end %}
         <!-- gif loading editableimage -->
         <img id="imgLOAD" width="50" height="50" src="{{ site_base }}/common/css/loading.gif" />

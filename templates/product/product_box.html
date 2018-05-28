@@ -16,8 +16,6 @@
                             <h3 class="col-xs-12 detail-categ ellipsis multiline"> {{! description }}</h3>
 
                             <p class="{{! (parseInt(data.customer_price) === 0 || isNaN(parseInt(data.customer_price))) ? '' : 'hidden' }} col-xs-12 price_categ price">{{! main_price|money }}</p>
-
-                            <p class="{{! (parseInt(data.customer_price) === 0 || isNaN(parseInt(data.customer_price))) ? 'hidden' : '' }} col-xs-12 price_categ price"><span style="text-decoration:line-through" >{{! main_price|money }}</span> {{! customer_price|money }}</p>
                         </figcaption>
                     </div>
                 </figure>

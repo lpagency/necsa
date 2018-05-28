@@ -103,7 +103,7 @@
                 }
                 html+='<p class="'+notClient+' pull-left price price_prod_detail col-sm-12 pad0">'+Utils.formatMoney(data.main_price)+'</p>';
 
-                html+='<p class="'+client+' pull-left price price_prod_detail col-sm-12 pad0"><span style="text-decoration:line-through" class="money">'+Utils.formatMoney(data.main_price) +'</span> '+Utils.formatMoney(data.customer_price)+'</p>';
+                html+='<p class="'+client+' pull-left price price_prod_detail col-sm-12 pad0"><span class="money">'+Utils.formatMoney(data.main_price) +'</span> ';
 
                 $(".price_prod_detail").html(html);
 

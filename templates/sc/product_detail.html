@@ -18,8 +18,8 @@
     .fancybox-wrap{
         width: 800px !important;
     }*/
-    body::-webkit-scrollbar { 
-    display: none; 
+    body::-webkit-scrollbar {
+    display: none;
     }
     .hidden{
         display: none;
@@ -70,7 +70,7 @@
             'http://localhost:8522/',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com/');
-        var app_public = $.environmentVar(16,3,13);
+        var app_public = $.environmentVar('necsa', 'necsa', 'necsa');
 
         $.ajax({
             type    : "GET",
@@ -204,7 +204,7 @@
                     <div class="col-sm-6 col-xs-12 ">
                     <a href="{{site_base}}/carrito_compra"  target="_parent">
                         <button  class="btn btn-lg  btn-block btn_carro">
-    
+
                             &nbsp;VER CARRO
                         </button>
                         </a>
@@ -232,10 +232,10 @@
 
     <div class="pull-right close" >
         <a class="close-detail" href="javascript:parent.jQuery.fancybox.close();">
-            
+
         <img src="https://7static.loadingplay.com/static/images/a01020b72a7fff2ee3d64de469d99eee_close-window-icon.png" width="30" height="30" style="margin: 10px"/>
         <br>
-        
+
             <!-- <img src="https://84static.loadingplay.com/static/images/25b44dfc9bd8f0cc21d5c108d0caf06a_icon_site_close_black.png" width="30" height="30" /> -->
         </a>
     </div>
@@ -274,7 +274,7 @@
 
 
     <!-- Related Products -->
-    
+
     <!--/ Related Products -->
 
 </div>

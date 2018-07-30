@@ -11,7 +11,7 @@
 
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
 
     var base_url = $.environmentVar(
@@ -22,7 +22,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(13, 13, 13);
+    var app_public = $.environmentVar('necsa', 'necsa', 'necsa');
     var config = {
         'app_public': app_public,
         'base_url': base_url,
@@ -43,13 +43,13 @@ $(document).ready(function()
 });
 </script>
 
-{% end %} 
-{% block body %} 
-{% if is_admin %} 
-{% set editabletext = 'editabletext' %} 
-{% else %} 
-{% set editabletext = '' %} 
-{% end %} 
+{% end %}
+{% block body %}
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
 
 {% include '../home/menu_fixed.html' %}
 <section style="position: relative;" class="bottom_movil">

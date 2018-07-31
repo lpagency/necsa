@@ -49,7 +49,7 @@ $(document).ready(function()
     }
     catch (ex)
     {
-        // nothing here... 
+        // nothing here...
     }
 
     $("#" + tag).addClass("active");
@@ -66,7 +66,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(13, 13, 13);
+    var app_public = $.environmentVar('necsa', 'necsa', 'necsa');
 
     var config =
     {
